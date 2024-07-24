@@ -1,0 +1,158 @@
+:root {
+  --accent-color: #2b7fff;
+  --main-color: #011c44;
+}
+
+/* Base */
+body {
+  color: var(--main-color);
+  font-weight: 400;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 1.5;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+/* Header-navigation */
+/* .header-nav-main {
+  
+} */
+
+.header-nav {
+  color: var(--main-color);
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+.header-nav:hover {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+/* Hero-section */
+.hero-text {
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.hero-title {
+  color: var(--accent-color);
+  font-family: Play;
+  font-weight: 700;
+  font-size: 128px;
+  margin-bottom: 0;
+  line-height: 114px;
+  margin-bottom: 40px;
+}
+
+.hero-button {
+  border: transparent;
+  border-radius: 32px;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 14px;
+  padding: 16px 32px;
+}
+.hero-button:hover {
+  font-weight: 600;
+  background-color: transparent;
+  color: var(--main-color);
+  border-color: #2b7fff;
+  border-radius: 32px;
+}
+
+.button-text-descripcion {
+  font-size: 12px;
+}
+
+/* All-section */
+.hero-section {
+  padding: 16.5px 0 63.25px;
+}
+
+.section-title {
+  color: var(--main-color);
+  font-family: Play, sans-serif;
+  font-size: 64px;
+  margin-bottom: 40px;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+/* .about-us-text {
+  line-height: 1.7;
+} */
+
+.our-procedures-pic {
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.section-about-us {
+  padding: 63.25px 0 86px;
+}
+
+.about-us-text {
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+
+/* .title-about-us {
+  font-size: 64px;
+  font-family: sans-serif;
+   */
+
+.section-why-we {
+  padding: 86px 0 48px;
+}
+
+.why-we-text {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.section-our-procedures {
+  padding: 48px 0;
+}
+
+.section-contacts-section {
+  padding: 48px 0;
+}
+
+.section-footer {
+  padding-top: 48px;
+}
+
+/* FOOTER */
+.footer {
+  font-weight: 400;
+  font-size: 16px;
+}
+.cotact-footer {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.address-footer {
+  font-size: 16px;
+  color: #ffffff;
+}
