@@ -80,7 +80,15 @@ p {
 .header-contact {
   display: flex;
   align-items: center;
-  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.header-contact-link {
+  color: var(--main-color);
+}
+
+.header-contact-link:hover {
+  color: var(--accent-color);
 }
 
 .header-contact-items {
@@ -156,9 +164,37 @@ p {
   padding: 63.25px 0 86px;
 }
 
+.container-about-us {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+}
+
+.about-us-content {
+  flex: 1;
+  max-width: 700px;
+  gap: 32px;
+}
+
 .about-us-text {
   margin-bottom: 40px;
   font-size: 22px;
+}
+
+/* .about-us-images-item:nth-child(2) {
+  margin-top: 20px;
+  margin-left: 20px;
+} */
+
+/* .about-us-images-item{
+
+} */
+
+.about-us-imeges {
+  /* display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center; */
 }
 
 /* .title-about-us {
