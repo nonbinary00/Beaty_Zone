@@ -181,14 +181,10 @@ p {
   font-size: 22px;
 }
 
-/* .about-us-images-item:nth-child(2) {
-  margin-top: 20px;
-  margin-left: 20px;
-} */
-
-/* .about-us-images-item{
-
-} */
+.about-us-images-item-second {
+  margin-top: 40px;
+  margin-left: 195px;
+}
 
 .about-us-imeges {
   /* display: flex;
@@ -204,6 +200,10 @@ p {
 
 .section-why-we {
   padding: 86px 0 48px;
+}
+
+.why-we-title {
+  text-align: center;
 }
 
 .why-we-text {
