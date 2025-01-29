@@ -33,6 +33,7 @@ h2,
 h3,
 p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .container {
@@ -139,13 +140,17 @@ p {
 /* All-section */
 .hero-section {
   padding: 16.5px 0 63.25px;
+  background-image: url('../imeges/Головна-картинка.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 .section-title {
   color: var(--main-color);
   font-family: Play, sans-serif;
   font-size: 64px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .accent {
@@ -168,12 +173,12 @@ p {
   display: flex;
   align-items: flex-start;
   justify-content: start;
+  gap: 32px;
 }
 
 .about-us-content {
   flex: 1;
   max-width: 700px;
-  gap: 32px;
 }
 
 .about-us-text {
@@ -183,15 +188,14 @@ p {
 
 .about-us-images-item-second {
   margin-top: 40px;
-  margin-left: 195px;
+  margin-left: 160px;
 }
 
-.about-us-imeges {
+/* .about-us-imeges {
   /* display: flex;
   flex: 1;
   justify-content: center;
   align-items: center; */
-}
 
 /* .title-about-us {
   font-size: 64px;
@@ -209,20 +213,54 @@ p {
 .why-we-text {
   font-size: 18px;
   line-height: 1.5;
+  margin-top: 12px;
 }
+
+.why-we-exsample {
+  display: flex;
+  justify-content: space-around;
+}
+
+.why-we-cards {
+  border-radius: 32px;
+  background-color: tomato;
+  width: 316px;
+  height: 181px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .section-our-procedures {
   padding: 48px 0;
+}
+
+/* sections our-procedures */
+.our-procedures-title {
+  text-align: center;
+}
+
+.our-procedures-pic {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.formats-pic {
+  flex-basis: calc((100%) - 32 / 3);
 }
 
 .section-contacts-section {
   padding: 48px 0;
 }
 
+/* FOOTER */
+
 .section-footer {
   padding-top: 48px;
 }
 
-/* FOOTER */
 .footer {
   font-weight: 400;
   font-size: 16px;
