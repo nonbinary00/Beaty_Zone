@@ -188,9 +188,11 @@ p {
 
 .about-us-images-list::before {
   content: '';
-  display: block;
+  display: inline-block;
   width: 40px;
   height: 40px;
+  background-image: url(../svg/Star2.svg);
+  background-repeat: no-repeat;
 }
 
 .about-us-images-item-second {
@@ -242,6 +244,27 @@ p {
   padding: 48px 0;
 }
 
+/* slider-button */
+
+.slider-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--main-color);
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  border-radius: 77%;
+  cursor: pointer;
+}
+
+.slider-button:hover {
+  background-color: var(--accent-color);
+  fill: #ffffff;
+}
+
 /* sections our-procedures */
 .our-procedures-title {
   text-align: center;
@@ -288,10 +311,6 @@ p {
 .footer-container {
   display: flex;
   align-items: center;
-}
-
-.address-footer {
-  color: #ffffff;
 }
 
 .cotact-footer {
