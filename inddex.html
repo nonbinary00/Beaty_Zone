@@ -177,18 +177,22 @@
               </svg>
             </button>
             <ul class="our-procedures-pic">
-              <li class="formats-pic"></li>
-              <article class="formard-cards">
-                <h3>Маски для обличчя</h3>
-              </article>
-              <li class="formats-pic"></li>
-              <article class="formard-cards">
-                <h3>Ін'єкції для обличчя</h3>
-              </article>
-              <li class="formats-pic"></li>
-              <article class="formard-cards">
-                <h3>Очищення обличчя</h3>
-              </article>
+              <li class="formats-pic">
+                <article class="formard-cards">
+                  <h3>Маски для обличчя</h3>
+                </article>
+              </li>
+              <li class="formats-pic">
+                <article class="formard-cards">
+                  <h3>Ін'єкції для обличчя</h3>
+                </article>
+              </li>
+
+              <li class="formats-pic">
+                <article class="formard-cards">
+                  <h3>Очищення обличчя</h3>
+                </article>
+              </li>
             </ul>
             <button class="slider-button" type="button">
               <svg width="16px" height="16px">
@@ -200,33 +204,46 @@
       </section>
       <section class="section-contacts-section" id="contacts-section">
         <div class="container">
-          <h2 class="section-title">
+          <h2 class="section-title contact-section-title">
             Як нас <span class="accent">знайти</span>
           </h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46617.645942957504!2d30.503219974668212!3d50.44150339883269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50853c3c51%3A0x6703d85b0d10b524!2z0L_QtdGALiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sde!4v1716374122720!5m2!1sru!2sde"
-            width="605"
-            height="481"
-            style="border: 0; border-radius: 32px"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="contact-container">
+            <div class="contact-form"></div>
+            <!-- форма -->
+            <iframe
+              class="contact-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46617.645942957504!2d30.503219974668212!3d50.44150339883269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50853c3c51%3A0x6703d85b0d10b524!2z0L_QtdGALiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sde!4v1716374122720!5m2!1sru!2sde"
+              width="605"
+              height="481"
+              style="border: 0; border-radius: 32px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
         <div class="footer-container">
-          <img src="./imeges/logo.svg" alt=" Логотип beauty zone" />
-          <ul class="cotact-footer">
-            <li><a href="#">Про нас</a></li>
-            <li><a href="#">Чому ми</a></li>
-            <li><a href="#">Наші процедури</a></li>
-            <li><a href="#">Контакти</a></li>
-          </ul>
-          <address>
-            <ul class="address-footer">
+          <nav class="footer-nav">
+            <img
+              class="footer-logo"
+              src="./imeges/logo.svg"
+              width="83"
+              height="42"
+              alt=" Логотип beauty zone"
+            />
+            <ul class="footer-nav-item">
+              <li><a href="#">Про нас</a></li>
+              <li><a href="#">Чому ми</a></li>
+              <li><a href="#">Наші процедури</a></li>
+              <li><a href="#">Контакти</a></li>
+            </ul>
+          </nav>
+          <address class="footer-adress">
+            <ul class="footer-adress-list">
               <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
               <li>
                 <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
@@ -260,8 +277,10 @@
                 </a>
               </li>
             </ul>
-            <a href="#" target="_blank">Політика конфіденційності</a>
-            <p class="adress-copyright">&copy;© 2024 Дані захищені</p>
+            <div class="footer-adress-coopirate">
+              <a href="#" target="_blank">Політика конфіденційності</a>
+              <p class="adress-copyright">&copy; 2024 Дані захищені</p>
+            </div>
           </address>
         </div>
       </div>
