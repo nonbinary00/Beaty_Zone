@@ -186,13 +186,43 @@ p {
   font-size: 22px;
 }
 
+.about-us-images-list {
+  position: relative; /* Это создаст контекст для абсолютного позиционирования */
+  list-style: none;
+}
+
 .about-us-images-list::before {
   content: '';
-  display: inline-block;
+  position: absolute;
   width: 40px;
   height: 40px;
   background-image: url(../svg/Star2.svg);
   background-repeat: no-repeat;
+  right: 30px; /* Отступ от правого края списка */
+  top: 14px;
+}
+
+.about-us-images-list::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url(../svg/Star3.svg);
+  background-repeat: no-repeat;
+  left: 80%; /* Центр между изображениями */
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.about-us-images-item-first::after {
+  content: '';
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background-image: url(../svg/Star1.svg);
+  background-repeat: no-repeat;
+  left: 80px; /* Сдвиг влево от первого фото */
+  top: 50%;
 }
 
 .about-us-images-item-second {
