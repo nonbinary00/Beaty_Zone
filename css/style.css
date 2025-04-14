@@ -186,6 +186,10 @@ p {
   font-size: 22px;
 }
 
+.about-us-text:last-child {
+  margin-bottom: 0;
+}
+
 .about-us-images-list {
   position: relative; /* Это создаст контекст для абсолютного позиционирования */
   list-style: none;
@@ -354,6 +358,20 @@ p {
   background-color: var(--main-color);
   background-image: url(../imeges/background.png);
   color: #ffffff;
+  padding: 32px 0 32px 0;
+  position: relative;
+}
+
+.footer::after {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 180px;
+  height: 112px;
+  background-image: url('../imeges/ Сosmetics.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: '';
 }
 
 .footer a {
@@ -364,15 +382,18 @@ p {
 .footer-container {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 .footer-nav {
   flex-basis: 50%;
   display: flex;
+  justify-content: space-between;
 }
-.footer-logo {
+
+/* .footer-logo {
   flex-basis: 50%;
-}
+} */
 
 .footer-nav-item {
   text-decoration-color: #ffffff;
@@ -385,12 +406,48 @@ p {
 
 .footer-adress {
   display: flex;
+  flex-basis: 50%;
+  justify-content: space-between;
 }
 
-.footer-adress-list {
+/* .footer-adress-list {
   flex-basis: 50%;
+} */
+
+/* .footer-adress-coopirate {
+  flex-basis: 50%;
+} */
+
+/* МОДАЛЬНОЕ ОКНО  */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer-adress-coopirate {
-  flex-basis: 50%;
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 725px;
+  height: 680px;
+  background-color: var(--main-color);
+  border-radius: 48px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 42px;
+  right: 42px;
 }
