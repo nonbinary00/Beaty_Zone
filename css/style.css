@@ -47,9 +47,23 @@ p {
   
 } */
 
+.header {
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+}
+
 .header-container {
   display: flex;
   align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 32px;
 }
 
 .header-navigation {
@@ -65,6 +79,7 @@ p {
   gap: 56px;
   flex-grow: 1;
   justify-content: center;
+  transition: color 0.3s;
 }
 
 .header-nav {
@@ -139,7 +154,7 @@ p {
 
 /* All-section */
 .hero-section {
-  padding: 16.5px 0 63.25px;
+  padding: 120px 0 63.25px;
   background-image: url('../imeges/Головна-картинка.jpg');
   background-repeat: no-repeat;
   background-position: center top;
@@ -335,7 +350,13 @@ p {
     rgba(1, 28, 68, 0.725825) 84.61%,
     #011c44 101.39%
   );
+  transition: transform 0.3s;
 }
+
+.formard-cards:hover {
+  transform: scale(1.05);
+}
+
 /* contacts */
 
 .section-contacts-section {
@@ -430,6 +451,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px 0;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .backdrop.is-hidden {
@@ -440,8 +463,10 @@ p {
 
 .modal {
   position: relative;
-  width: 725px;
-  height: 680px;
+  max-width: 725px;
+  width: 100%;
+  max-height: 680px;
+  height: 100%;
   background-color: var(--main-color);
   border-radius: 48px;
 }
