@@ -210,9 +210,8 @@
             Як нас <span class="accent">знайти</span>
           </h2>
           <div class="contact-container">
-            <div class="contact-form"></div>
+            <!-- <div class="contact-form"></div> -->
             <!-- форма -->
-
             <iframe
               class="contact-map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46617.645942957504!2d30.503219974668212!3d50.44150339883269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50853c3c51%3A0x6703d85b0d10b524!2z0L_QtdGALiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sde!4v1716374122720!5m2!1sru!2sde"
@@ -223,6 +222,59 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
+            <div class="contact-form">
+              <p class="contact-text">
+                Запишіться <span class="accent">безкоштовно</span>
+                <span class="modal-new-line">та отримайте подарунок</span>
+              </p>
+              <form name="contact-form" autocomplete="off" novalidate>
+                <div class="contact-field">
+                  <label class="form-label visually-hidden" for="user-name"
+                    >Ваше ім'я та прізвище</label
+                  >
+                  <input
+                    class="contact-input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Ваше ім'я та прізвище "
+                  />
+                </div>
+                <div class="contact-field">
+                  <label class="form-label visually-hidden" for="user-tel"
+                    >Телефон</label
+                  >
+                  <input
+                    class="contact-input"
+                    type="tel"
+                    id="user-tel"
+                    name="user-tel"
+                    placeholder="Телефон "
+                  />
+                </div>
+                <div class="contact-field">
+                  <label class="form-label visually-hidden" for="user-email"
+                    >Ваша електронна пошта</label
+                  >
+                  <input
+                    class="contact-input"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="Ваша електронна пошта "
+                  />
+                </div>
+                <button type="submit" class="form-button">
+                  Записатись безкоштовно
+                </button>
+                <p class="modal-confidentiality">
+                  Натискаючи на кнопку я погоджуюсь
+                  <a class="modal-link" href="#"
+                    >з політикою конфіденційності</a
+                  >
+                </p>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -289,7 +341,7 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
         <h2 class="modal-title">Замовити <span>дзвінок </span></h2>
@@ -297,7 +349,7 @@
           Запишіться <span class="accent">безкоштовно</span>
           <span class="modal-new-line">та отримайте подарунок</span>
         </p>
-        <form name="contact-form" autocomplete="off" novalidate>
+        <form name="contact-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name"
               >Ваше ім'я та прізвище</label
@@ -308,6 +360,7 @@
               id="user-name"
               name="user-name"
               placeholder="Ваше ім'я та прізвище "
+              required
             />
           </div>
           <div class="form-field">
@@ -320,6 +373,7 @@
               id="user-tel"
               name="user-tel"
               placeholder="Телефон "
+              required
             />
           </div>
           <div class="form-field">
@@ -332,6 +386,7 @@
               id="user-email"
               name="user-email"
               placeholder="Ваша електронна пошта "
+              required
             />
           </div>
           <button type="submit" class="form-button">
