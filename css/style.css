@@ -278,6 +278,15 @@ p {
 
 .section-why-we {
   padding: 86px 0 48px;
+  position: relative;
+}
+
+.wave-backgraund {
+  position: absolute;
+  bottom: -860px;
+  left: 0;
+  width: 100%;
+  z-index: 0;
 }
 
 .why-we-title {
@@ -297,13 +306,16 @@ p {
 
 .why-we-cards {
   border-radius: 32px;
-  background-color: tomato;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+
   width: 316px;
   height: 181px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 16px;
+  z-index: 2;
 }
 
 .section-our-procedures {
