@@ -238,21 +238,6 @@ p {
   fill: #ffffff;
 }
 
-.hero-text {
-  margin-bottom: 16px;
-  font-size: 18px;
-}
-
-.hero-title {
-  color: var(--accent-color);
-  font-family: Play;
-  font-weight: 700;
-  font-size: 128px;
-  margin-bottom: 0;
-  line-height: 114px;
-  margin-bottom: 40px;
-}
-
 .hero-section {
   padding: 120px 0 63.25px;
   height: 657px;
@@ -261,12 +246,18 @@ p {
   background-position: center top;
   background-size: cover;
 }
-
-.section-title {
-  color: var(--main-color);
-  font-family: Play, sans-serif;
-  font-size: 64px;
-  padding-bottom: 40px;
+.hero-section__text {
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+.hero-section__title {
+  color: var(--accent-color);
+  font-family: Play;
+  font-weight: 700;
+  font-size: 128px;
+  margin-bottom: 0;
+  line-height: 114px;
+  margin-bottom: 40px;
 }
 
 .accent {
@@ -277,7 +268,7 @@ p {
   padding: 63.25px 0 86px;
 }
 
-.container-about-us {
+.section-about-us-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,14 +281,21 @@ p {
   gap: 32px;
 }
 
-.about-us-content {
+.section-about-us-content {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   max-width: 700px;
 }
 
-.about-us-text {
+.section-about-us-title {
+  color: var(--main-color);
+  font-family: Play, sans-serif;
+  font-size: 64px;
+  padding-bottom: 40px;
+}
+
+.section-about-us-text {
   margin-bottom: 40px;
   font-size: 22px;
 }
