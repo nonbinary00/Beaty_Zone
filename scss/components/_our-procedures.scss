@@ -1,0 +1,93 @@
+.section-our-procedures {
+  padding: 48px 0;
+}
+
+.our-procedures-title {
+  text-align: center;
+}
+
+.our-procedure-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.our-procedures-pic {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.formats-pic {
+  display: flex;
+  flex-basis: calc((100% / 3) - 32px);
+}
+
+.formard-cards {
+  position: relative;
+  height: 456px;
+  width: 344px;
+  /* border: 1px solid black; */
+  border-radius: 16px 4px 16px 4px;
+  /* border-color: #011c44; */
+  /* background-image: linear-gradient(
+      180.05deg,
+      rgba(1, 28, 68, 0) 48.53%,
+      rgba(1, 28, 68, 0.725825) 84.61%,
+      #011c44 101.39%
+    ); */
+  transition: transform 0.3s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+.format-imeges {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px 4px 16px 4px;
+  z-index: -2; /* ещё ниже */
+}
+
+.formard-cards::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    #011c44 101.39%
+  );
+  border-radius: 16px 4px 16px 4px;
+  z-index: -1;
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+
+.formard-cards:hover::before {
+  opacity: 0;
+}
+
+.formard-cards:hover {
+  transform: scale(1.05);
+}
+
+.our-procedure-text {
+  color: #ffffff;
+  font-family: roboto;
+  font-weight: 200;
+  font-size: 22px;
+}

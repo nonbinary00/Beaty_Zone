@@ -1,0 +1,48 @@
+.section-contacts-section {
+  padding: 94px 0;
+}
+
+.contact-section-title {
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.contact-form {
+  width: 423px;
+  height: 481px;
+  background-color: var(--main-color);
+  border-radius: 32px;
+}
+
+.contact-text {
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 32px;
+  padding-top: 48px;
+}
+
+.contact-field {
+  position: relative;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.contact-input {
+  padding: 18px 32px;
+  width: 360px;
+  height: 52px;
+  border: 2px solid #747272;
+  border-radius: 32px;
+  background: transparent;
+}
+
+.contact-input:focus {
+  background-color: #747272;
+  outline: none;
+}

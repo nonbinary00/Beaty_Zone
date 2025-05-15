@@ -1,0 +1,68 @@
+.section-about-us {
+  padding: 63.25px 0 86px;
+}
+
+.container-about-us {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 32px;
+}
+
+.about-us-content {
+  flex: 1;
+  max-width: 700px;
+}
+
+.about-us-text {
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+
+.about-us-text:last-child {
+  margin-bottom: 0;
+}
+
+.about-us-images-list {
+  position: relative; /* Это создаст контекст для абсолютного позиционирования */
+  list-style: none;
+}
+
+.about-us-images-list::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url(../svg/Star2.svg);
+  background-repeat: no-repeat;
+  right: 30px; /* Отступ от правого края списка */
+  top: 14px;
+}
+
+.about-us-images-list::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url(../svg/Star3.svg);
+  background-repeat: no-repeat;
+  left: 80%; /* Центр между изображениями */
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.about-us-images-item-first::after {
+  content: '';
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background-image: url(../svg/Star1.svg);
+  background-repeat: no-repeat;
+  left: 80px; /* Сдвиг влево от первого фото */
+  top: 50%;
+}
+
+.about-us-images-item-second {
+  margin-top: 40px;
+  margin-left: 160px;
+}
