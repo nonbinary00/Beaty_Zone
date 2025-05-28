@@ -1,18 +1,22 @@
-.section-contacts-section {
+.section-contacts {
   padding: 94px 0;
 }
 
-.contact-section-title {
+.section-contacts__title {
   text-align: center;
+  color: var(--main-color);
+  font-family: Play, sans-serif;
+  font-size: 64px;
+  padding-bottom: 40px;
 }
 
-.contact-container {
+.section-contacts__container {
   display: flex;
   justify-content: center;
   gap: 32px;
 }
 
-.contact-form {
+.section-contacts-form {
   width: 423px;
   height: 481px;
   background-color: var(--main-color);

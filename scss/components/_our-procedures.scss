@@ -1,30 +1,34 @@
 .section-our-procedures {
   padding: 48px 0;
+
+  &__title {
+    text-align: center;
+    color: var(--main-color);
+    font-family: Play, sans-serif;
+    font-size: 64px;
+    padding-bottom: 40px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  __item {
+    display: flex;
+    flex-basis: calc((100% / 3) - 32px);
+  }
 }
 
-.our-procedures-title {
-  text-align: center;
-}
-
-.our-procedure-container {
-  display: flex;
-  gap: 32px;
-  align-items: center;
-}
-
-.our-procedures-pic {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.formats-pic {
-  display: flex;
-  flex-basis: calc((100% / 3) - 32px);
-}
-
-.formard-cards {
+.section-our-procedures-card {
   position: relative;
   height: 456px;
   width: 344px;
@@ -44,50 +48,122 @@
   justify-content: end;
   align-items: center;
   padding-bottom: 32px;
+
+  ::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      180.05deg,
+      rgba(1, 28, 68, 0) 48.53%,
+      rgba(1, 28, 68, 0.725825) 84.61%,
+      #011c44 101.39%
+    );
+    border-radius: 16px 4px 16px 4px;
+    z-index: -1;
+    transition: opacity 0.3s;
+    opacity: 1;
+  }
+
+  &:hover::before {
+    opacity: 0;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__imeges {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px 4px 16px 4px;
+    z-index: -2; /* ещё ниже */
+  }
+
+  &__text {
+    color: #ffffff;
+    font-family: roboto;
+    font-weight: 200;
+    font-size: 22px;
+  }
 }
 
-.format-imeges {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 16px 4px 16px 4px;
-  z-index: -2; /* ещё ниже */
-}
+// .section-our-procedures__title {
+//   text-align: center;
+//   color: var(--main-color);
+//   font-family: Play, sans-serif;
+//   font-size: 64px;
+//   padding-bottom: 40px;
+// }
 
-.formard-cards::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(
-    180.05deg,
-    rgba(1, 28, 68, 0) 48.53%,
-    rgba(1, 28, 68, 0.725825) 84.61%,
-    #011c44 101.39%
-  );
-  border-radius: 16px 4px 16px 4px;
-  z-index: -1;
-  transition: opacity 0.3s;
-  opacity: 1;
-}
+// .section-our-procedure__container {
+//   display: flex;
+//   gap: 32px;
+//   align-items: center;
+// }
 
-.formard-cards:hover::before {
-  opacity: 0;
-}
+// .section-our-procedures__pic {
+//   display: flex;
+//   justify-content: center;
+//   gap: 16px;
+//   flex-wrap: wrap;
+// }
 
-.formard-cards:hover {
-  transform: scale(1.05);
-}
+// .section-our-procedures__item {
+//   display: flex;
+//   flex-basis: calc((100% / 3) - 32px);
+// }
 
-.our-procedure-text {
-  color: #ffffff;
-  font-family: roboto;
-  font-weight: 200;
-  font-size: 22px;
-}
+// .section-our-procedures-card__imeges {
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+//   border-radius: 16px 4px 16px 4px;
+//   z-index: -2; /* ещё ниже */
+// }
+
+// .formard-cards::before {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-image: linear-gradient(
+//     180.05deg,
+//     rgba(1, 28, 68, 0) 48.53%,
+//     rgba(1, 28, 68, 0.725825) 84.61%,
+//     #011c44 101.39%
+//   );
+//   border-radius: 16px 4px 16px 4px;
+//   z-index: -1;
+//   transition: opacity 0.3s;
+//   opacity: 1;
+// }
+
+// .formard-cards:hover::before {
+//   opacity: 0;
+// }
+
+// .formard-cards:hover {
+//   transform: scale(1.05);
+// }
+
+// .section-our-procedures-card__text {
+//   color: #ffffff;
+//   font-family: roboto;
+//   font-weight: 200;
+//   font-size: 22px;
+// }
