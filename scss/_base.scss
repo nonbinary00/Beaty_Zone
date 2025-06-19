@@ -35,6 +35,10 @@ p {
   margin-bottom: 0;
 }
 
+.img {
+  object-fit: cover;
+}
+
 .container {
   width: 100%;
   max-width: 1272px;

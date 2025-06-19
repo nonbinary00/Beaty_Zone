@@ -8,6 +8,17 @@
   font-size: 18px;
   margin-bottom: 14px;
   padding: 16px 32px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $br-tablet) {
+    display: inline-block; /* или просто "inline", в зависимости от макета */
+    margin-left: initial; /* или "0" */
+    margin-right: initial; /* или "0" */
+    width: auto;
+  }
 }
 .hero-button:hover {
   font-weight: 600;
@@ -19,6 +30,10 @@
 
 .button-text-descripcion {
   font-size: 12px;
+  text-align: center;
+  @media screen and (min-width: $br-tablet) {
+    text-align: start;
+  }
 }
 
 .slider-button {
@@ -33,9 +48,34 @@
   border: 1px solid var(--main-color);
   border-radius: 77%;
   cursor: pointer;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  &-prev {
+    left: 0;
+  }
+
+  &-next {
+    right: 0;
+  }
+
+  &.swiper-button-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 }
 
 .slider-button:hover {
   background-color: var(--accent-color);
   fill: #ffffff;
+}
+
+.swiper-button-prev::before,
+.swiper-button-next::before,
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: none !important;
 }

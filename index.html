@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
     <link
@@ -65,6 +70,16 @@
               </li>
             </ul>
           </div>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24px" height="24px">
+              <use href="./svg/br-btn.svg#icon-Vector"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -74,8 +89,7 @@
           <div class="container">
             <p class="hero-section__text">Косметологічна клініка</p>
             <h1 lang="en" class="hero-section__title">
-              Beauty <br />
-              zone
+              Beauty <span class="hero-section__title-line">zone</span>
             </h1>
             <button class="hero-button modal-btn-open" type="button">
               Замовити дзвінок
@@ -114,14 +128,20 @@
               <ul class="section-about-us__images-list">
                 <li class="section-about-us__images-item-first">
                   <img
+                    srcset="
+                      ./imeges/Mask-group.jpg     1x,
+                      ./imeges/face-before@2x.jpg 2x
+                    "
                     src="./imeges/Mask-group.jpg"
                     alt="face"
-                    width="327px"
-                    height="327px"
                   />
                 </li>
                 <li class="section-about-us__images-item-second">
                   <img
+                    srcset="
+                      ./imeges/Mask-group2.jpg   1x,
+                      ./imeges/face-after@2x.jpg 2x
+                    "
                     src="./imeges/Mask-group2.jpg"
                     alt="face-better"
                     width="327px"
@@ -183,66 +203,110 @@
             Наші <span class="accent">процедури</span>
           </h2>
           <div class="section-our-procedures__container">
-            <button class="slider-button" type="button">
+            <button
+              class="section-our-procedures__button slider-button swiper-button-prev"
+              type="button"
+            >
               <svg width="16px" height="16px">
                 <use href="./svg/button-icons.svg#icon-Arrow-1"></use>
               </svg>
             </button>
-            <ul class="section-our-procedures__list">
-              <li class="section-our-procedures__item">
-                <article class="section-our-procedures-card">
-                  <img
-                    class="section-our-procedures-card__imeges"
-                    src="./imeges/mask-for-faces.jpg"
-                    alt="Mask procedure"
-                  />
-                  <h3 class="section-our-procedures-card__text">
-                    Маски для обличчя
-                  </h3>
-                </article>
-              </li>
-              <li class="section-our-procedures__item">
-                <article class="section-our-procedures-card">
-                  <img
-                    class="section-our-procedures-card__imeges"
-                    src="./imeges/injection-mask.jpg"
-                    alt="Mask procedure"
-                  />
-                  <h3 class="section-our-procedures-card__text">
-                    Ін'єкції для обличчя
-                  </h3>
-                </article>
-              </li>
-
-              <li class="section-our-procedures__item">
-                <article class="section-our-procedures-card">
-                  <img
-                    class="section-our-procedures-card__imeges"
-                    src="./imeges/lasek-mask.png"
-                    alt="Mask procedure"
-                  />
-                  <h3 class="section-our-procedures-card__text">
-                    Очищення обличчя
-                  </h3>
-                </article>
-              </li>
-            </ul>
-            <button class="slider-button" type="button">
+            <div class="swiper">
+              <ul class="section-our-procedures__list swiper-wrapper">
+                <li class="section-our-procedures__item swiper-slide">
+                  <article class="section-our-procedures-card">
+                    <img
+                      class="section-our-procedures-card__imeges"
+                      src="./imeges/mask-for-faces.jpg"
+                      alt="Mask procedure"
+                    />
+                    <h3 class="section-our-procedures-card__text">
+                      Маски для обличчя
+                    </h3>
+                  </article>
+                </li>
+                <li class="section-our-procedures__item swiper-slide">
+                  <article class="section-our-procedures-card">
+                    <img
+                      class="section-our-procedures-card__imeges"
+                      src="./imeges/injection-mask.jpg"
+                      alt="Mask procedure"
+                    />
+                    <h3 class="section-our-procedures-card__text">
+                      Ін'єкції для обличчя
+                    </h3>
+                  </article>
+                </li>
+                <li class="section-our-procedures__item swiper-slide">
+                  <article class="section-our-procedures-card">
+                    <img
+                      class="section-our-procedures-card__imeges"
+                      src="./imeges/lasek-mask.png"
+                      alt="Mask procedure"
+                    />
+                    <h3 class="section-our-procedures-card__text">
+                      Очищення обличчя
+                    </h3>
+                  </article>
+                </li>
+                <li class="section-our-procedures__item swiper-slide">
+                  <article class="section-our-procedures-card">
+                    <img
+                      class="section-our-procedures-card__imeges"
+                      src="./imeges/mask-for-faces.jpg"
+                      alt="Mask procedure"
+                    />
+                    <h3 class="section-our-procedures-card__text">
+                      Маски для обличчя
+                    </h3>
+                  </article>
+                </li>
+                <li class="section-our-procedures__item swiper-slide">
+                  <article class="section-our-procedures-card">
+                    <img
+                      class="section-our-procedures-card__imeges"
+                      src="./imeges/lasek-mask.png"
+                      alt="Mask procedure"
+                    />
+                    <h3 class="section-our-procedures-card__text">
+                      Очищення обличчя
+                    </h3>
+                  </article>
+                </li>
+                <li class="section-our-procedures__item swiper-slide">
+                  <article class="section-our-procedures-card">
+                    <img
+                      class="section-our-procedures-card__imeges"
+                      src="./imeges/injection-mask.jpg"
+                      alt="Mask procedure"
+                    />
+                    <h3 class="section-our-procedures-card__text">
+                      Ін'єкції для обличчя
+                    </h3>
+                  </article>
+                </li>
+              </ul>
+            </div>
+            <button
+              class="section-our-procedures__button slider-button swiper-button-next"
+              type="button"
+            >
               <svg width="16px" height="16px">
                 <use href="./svg/button-icons.svg#icon-Arrow-2"></use>
               </svg>
             </button>
           </div>
+          <div
+            class="section-our-procedures__pagination swiper-pagination"
+          ></div>
         </div>
       </section>
-      <section class="section-contacts" id="contacts-section">
+      <!-- <section class="section-contacts" id="contacts-section">
         <div class="container">
           <h2 class="section-title section-contacts__title">
             Як нас <span class="accent">знайти</span>
           </h2>
           <div class="section-contacts__container">
-            <!-- <div class="contact-form"></div> -->
-            <!-- форма -->
             <iframe
               class="contact-map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46617.645942957504!2d30.503219974668212!3d50.44150339883269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50853c3c51%3A0x6703d85b0d10b524!2z0L_QtdGALiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sde!4v1716374122720!5m2!1sru!2sde"
@@ -308,9 +372,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__container">
           <div class="footer__coolum">
@@ -388,7 +452,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden">
       <div class="modal">
@@ -448,6 +512,9 @@
         </form>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

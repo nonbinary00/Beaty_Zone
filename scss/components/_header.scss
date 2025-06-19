@@ -4,8 +4,16 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(10px);
+
+  @media screen and (min-width: $br-tablet) {
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+  }
 
   &__container {
     display: flex;
@@ -23,12 +31,16 @@
     gap: 40px;
   }
   &__nav__main {
-    display: flex;
-    align-items: center;
-    gap: 56px;
-    flex-grow: 1;
-    justify-content: center;
-    transition: color 0.3s;
+    display: none;
+
+    @media screen and (min-width: $br-tablet) {
+      display: flex;
+      align-items: center;
+      gap: 56px;
+      flex-grow: 1;
+      justify-content: center;
+      transition: color 0.3s;
+    }
   }
   &__nav {
     color: var(--main-color);
@@ -41,9 +53,13 @@
     }
   }
   &__contact {
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
+    display: none;
+
+    @media screen and (min-width: $br-tablet) {
+      display: flex;
+      align-items: center;
+      margin-left: 40px;
+    }
   }
   &__contact__link {
     color: var(--main-color);
@@ -55,5 +71,19 @@
     display: flex;
     align-items: center;
     gap: 32px;
+  }
+  &__burger {
+    display: block;
+    background-color: transparent;
+    border: none;
+    fill: #ffffff;
+    padding: 0;
+
+    @media screen and (min-width: $br-tablet) {
+      display: none;
+    }
+    @media screen and (min-width: $br-desctop) {
+      display: none;
+    }
   }
 }

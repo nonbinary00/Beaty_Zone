@@ -1,0 +1,6 @@
+@charset "UTF-8";
+.swiper-pagination {
+  position: static; /* сбросим абсолютное позиционирование */
+  margin-top: 20px; /* отступ вниз от слайдера */
+  text-align: center; /* по центру */
+}/*# sourceMappingURL=.swaper-pagination.css.map */

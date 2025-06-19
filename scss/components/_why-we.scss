@@ -22,7 +22,14 @@
 
   &__exsample {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    @media screen and (min-width: $br-tablet) {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+    }
   }
 
   &__cards {
