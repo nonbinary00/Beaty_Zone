@@ -2,6 +2,21 @@
   padding: 86px 0 48px;
   position: relative;
 
+  .wave-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
   &__title {
     color: var(--main-color);
     font-family: Play, sans-serif;

@@ -6,11 +6,6 @@
   width: 100%;
 
   @media screen and (min-width: $br-tablet) {
-    position: absolute;
-    background-color: transparent;
-    top: 0;
-    left: 0;
-    width: 100%;
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
   }

@@ -1,161 +1,3 @@
-// .footer {
-//   background-color: var(--main-color);
-//   background-image: url(../imeges/background.png);
-//   color: #ffffff;
-//   padding: 32px 0 32px 0;
-//   position: relative;
-// }
-
-// .footer::after {
-//   position: absolute;
-//   bottom: 0px;
-//   right: 0px;
-//   width: 180px;
-//   height: 112px;
-//   background-image: url('../imeges/ Сosmetics.png');
-//   background-size: 100%;
-//   background-repeat: no-repeat;
-//   content: '';
-// }
-
-// .footer a {
-//   color: inherit;
-//   text-decoration: none;
-// }
-
-// .footer__container {
-//   display: flex;
-//   gap: 96px;
-//   flex-wrap: wrap;
-// }
-
-// .footer__column {
-//   flex: 1;
-//   min-width: 200px;
-//   padding: 0 10px;
-// }
-
-// .footer__logo {
-//   display: block;
-//   margin-bottom: 16px;
-// }
-
-// .footer__nav-link {
-//   font-family: roboto;
-//   font-weight: 400;
-//   font-size: 16px;
-//   font-style: normal;
-// }
-
-// .footer__nav-link:hover {
-//   color: #2b7fff;
-// }
-
-// .footer__nav-list {
-//   list-style: none;
-//   padding: 0;
-//   margin: 0;
-//   display: flex;
-//   flex-direction: column;
-//   gap: 12px;
-// }
-
-// .footer__contacts-wrapper {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .footer__contacts-link {
-//   font-family: Roboto;
-//   font-weight: 400;
-//   font-size: 16px;
-//   padding-bottom: 16px;
-//   font-style: normal;
-// }
-
-// // .footer-address {
-// //   margin-bottom: 16px;
-// // }
-
-// .footer__contacts-list {
-//   list-style: none;
-//   padding: 0;
-//   margin: 0 0 16px 0;
-//   display: flex;
-//   flex-direction: column;
-//   gap: 8px;
-// }
-
-// .footer__social-icons {
-//   display: flex;
-//   gap: 12px;
-//   list-style: none;
-//   padding: 0;
-//   margin: 0;
-// }
-
-// .footer-nav-item {
-//   text-decoration-color: #ffffff;
-//   font-size: 16px;
-//   display: flex;
-//   flex-direction: column;
-//   gap: 16px;
-//   gap: 8px;
-//   padding: 0;
-//   margin: 0;
-//   list-style: none;
-// }
-
-// .footer-adress {
-//   display: flex;
-//   gap: 20px;
-//   flex: 1;
-// }
-
-// .footer-adress-columns {
-//   display: flex;
-//   gap: 16px;
-//   flex-direction: column;
-// }
-
-// .footer-contacts {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 16px;
-// }
-
-// .footer__social-icons {
-//   display: flex;
-//   gap: 16px;
-//   margin-top: 16px;
-//   list-style: none;
-//   padding-left: 0;
-// }
-
-// .footer-link:hover {
-//   color: #2b7fff;
-// }
-
-// .footer__legal {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 8px;
-// }
-
-// .footer__privacy-link {
-//   font-family: roboto;
-//   font-weight: 400;
-//   font-size: 16px;
-//   font-style: normal;
-// }
-
-// .footer__copyright {
-//   font-family: roboto;
-//   font-weight: 400;
-//   font-size: 13px;
-//   color: #747272;
-// }
-
 .footer {
   background-color: var(--main-color);
   background-image: url(../imeges/background.png);
@@ -164,15 +6,20 @@
   position: relative;
 
   &::after {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 180px;
-    height: 112px;
-    background-image: url('../imeges/Cosmetics.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
+    display: none;
     content: '';
+    @media screen and (min-width: $br-tablet) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 180px;
+      height: 112px;
+      background-image: url('/imeges/Сosmetics-bg.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      display: block;
+      content: '';
+    }
   }
 
   a {
@@ -182,8 +29,15 @@
 
   &__container {
     display: flex;
-    gap: 96px;
+    align-items: center;
+    // gap: 96px;
     flex-wrap: wrap;
+    flex-direction: column;
+    @media screen and (min-width: $br-tablet) {
+      flex-direction: row;
+      gap: 96px;
+      align-items: start;
+    }
   }
 
   &__column {
@@ -194,7 +48,10 @@
 
   &__logo {
     display: block;
-    margin-bottom: 16px;
+    margin-bottom: 42px;
+    @media screen and (min-width: $br-tablet) {
+      margin-bottom: 16px;
+    }
   }
 
   &__nav {
@@ -205,6 +62,7 @@
       display: flex;
       flex-direction: column;
       gap: 12px;
+      align-items: center;
     }
 
     &-link {
@@ -226,12 +84,22 @@
     }
 
     &-list {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 16px 0;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
+      // list-style: none;
+      // padding: 0;
+      // margin: 0 0 16px 0;
+      // display: flex;
+      // flex-direction: column;
+      // gap: 8px;
+      display: none;
+      @media screen and (min-width: $br-tablet) {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 16px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        display: block;
+      }
     }
 
     &-link {
@@ -240,6 +108,7 @@
       font-size: 16px;
       padding-bottom: 16px;
       font-style: normal;
+      padding-bottom: 16px;
     }
   }
 
@@ -250,6 +119,12 @@
       margin-top: 16px;
       list-style: none;
       padding-left: 0;
+      justify-content: center;
+      margin-bottom: 10px;
+      @media screen and (min-width: $br-tablet) {
+        justify-content: flex-start;
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -261,13 +136,25 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    align-items: center;
+    @media screen and (min-width: $br-tablet) {
+      align-items: flex-start;
+    }
   }
 
   &__privacy-link {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    font-style: normal;
+    // font-family: 'Roboto', sans-serif;
+    // font-weight: 400;
+    // font-size: 16px;
+    // font-style: normal;
+    display: none;
+    @media screen and (min-width: $br-tablet) {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      font-style: normal;
+      display: block;
+    }
   }
 
   &__copyright {
